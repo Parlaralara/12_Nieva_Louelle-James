@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<title>Calculator ng Mga Palaka</title>
+	<script type='text/javascript'>
+	function sum()
+  {
+		let number1 = parseFloat(myForm.num1.value);
+		let number2 = parseFloat(myForm.num2.value);
+		let answer = number1 + number2;
+		myForm.result.value = answer;
+  }
+	function quotient()
+  {
+		let number1 = parseFloat(myForm.num1.value);
+		let number2 = parseFloat(myForm.num2.value);
+		let answer = number1 / number2;
+		myForm.result.value = answer;
+  }
+	function subtraction()
+  {
+		let number1 = parseFloat(myForm.num1.value);
+		let number2 = parseFloat(myForm.num2.value);
+		let answer = number1 - number2;
+		myForm.result.value = answer;
+  }
+	function multiplication()
+  {
+		let number1 = parseFloat(myForm.num1.value);
+		let number2 = parseFloat(myForm.num2.value);
+		let answer = number1 * number2;
+		myForm.result.value = answer;
+  }
+	</script>
+	</head>
+	<body bgcolor='beige'>
+	<style>
+	fieldset {
+		border: 2px solid;
+		border-color: ff0060;
+		width: 350px;
+		background-color: F9FBE7;
+	}
+	h1 {
+		font-family: MS Gothic;
+		font-weight: normal;
+	}
+	table {
+		border: 2px solid;
+		border-color: 00dfa2;
+	}
+	h2 {
+		font-family: MS Gothic;
+		font-weight: strong;
+		font-color: 4e3636;
+		font-size: 22px;
+	}
+	input {
+		font-size: 20px;
+	}
+	legend {
+		color: 00dfa2;
+	}
+	</style>
+	<body>
+	<fieldset>
+		<legend align='middle'><h1>Simple Calculator</h1></legend>
+		<form name='myForm'>
+		
+		<tr>
+		<td><h2>Enter the First Number</h2></td>
+		<td> 
+		<input type="text" name="num1" size="8"/> </td> </tr>
+		
+		<br>
+		
+		<tr>
+		<td><h2>Enter the Second Number: </h2> </td>
+		<td> <input type="text" name="num2"  size="8" />  </td> </tr>
+		
+		<br>
+		
+		<tr>
+		<td><h2>The sum is: </h2> </td>
+		<td> <input type="text" name="result" size="8" disabled/>  </td> </tr>
+		
+		<br>
+		
+		<tr>
+		<td colspan='2'> <input type="button" name="add" value="Add" onClick="sum()"/> </td>
+		<td colspan='2'> <input type='button' name='divide' value='Quotient' onClick='quotient()'/> </td>
+		<td colspan='2'> <input type='button' name='minus' value='Subtract' onClick='subtraction()'/> </td>
+		<td colspan='2'> <input type='button' name='divide' value='Multiply' onClick='multiplication()'/> </td>
+		</tr>
+		</table></form></fieldset></body>
+</html>
